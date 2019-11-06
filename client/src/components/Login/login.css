@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 15px;
+    color: red;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.base-container {
+    margin-top: 50px;
+}
+
+.footer {
+    padding: 10px;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+input {
+    margin-left: 20px;
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+}
+
+button {
+    height: 30px;
+    margin-left: 20px;
+}
+
+.btn {
+    font-weight: bold;
+    color: blue;
+    font-size: 15px;
+    
+}
