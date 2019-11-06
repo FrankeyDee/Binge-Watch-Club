@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Nav from "./components/Nav";
+import { Login, Register } from "./components/Login";
 
 function App() {
   return (
@@ -8,10 +9,10 @@ function App() {
       <div>
         <Nav />
         <Switch>
-          {/* <Route exact path="/" component={Books} />
-          <Route exact path="/books" component={Books} />
-          <Route exact path="/books/:id" component={Detail} />
-          <Route component={NoMatch} /> */}
+          <Route exact path="/" component={Login} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/register" component={Register} />
+          {/* <Route component={NoMatch} /> */}
         </Switch>
       </div>
     </Router>
