@@ -12,7 +12,8 @@
 }
 
 .base-container {
-    margin-top: 50px;
+    margin-top: 300px;
+    text-align: center;
 }
 
 .footer {
@@ -36,8 +37,12 @@ button {
 }
 
 .btn {
+    background-color: aquamarine;
     font-weight: bold;
     color: blue;
     font-size: 15px;
+    padding: 2px;
+    height: 40px;
+    width: 60px;
     
 }
