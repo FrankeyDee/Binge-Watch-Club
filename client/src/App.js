@@ -15,7 +15,11 @@ function App() {
           <Route exact path="/" component={Login} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
+ Login_Style
+          <Route exact path="/shows" component={My_Shows} />
+
           <Route exact path="/loginshow" component={LoginShow} />
+ master
           {/* <Route component={NoMatch} /> */}
         </Switch>
       </div>

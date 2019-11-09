@@ -12,6 +12,7 @@ export class Login extends React.Component {
     render() {
         return (
             <div className="base-container" ref={this.propsContainerRef}>
+
                 <div className="header"> LoginTestingOnly </div>
                 <div className="content"></div>
                 
@@ -20,10 +21,11 @@ export class Login extends React.Component {
                         <label htmlFor="username"> Username </label>
                         <input type="text" name="username" placeholder="username" />
                     </div>
-                    <div className="form-group">
-                        <label htmlFor="password"> Password </label>
-                        <input type="password" name="password" placeholder="password" />
+                    <div className="form">
+                        <label htmlFor="examplePassword" className="col-form-label" htmlFor="inputDefault">Password</label>
+                            <input type="password" className="input" placeholder="Enter Password" />
                     </div>
+
                 </div>
                 <div className="footer">
                     <button type="button" className="btn" onClick={this.handleSubmit}>
@@ -33,7 +35,6 @@ export class Login extends React.Component {
                 </div>
             </div>
             
-
         );
     }
 
