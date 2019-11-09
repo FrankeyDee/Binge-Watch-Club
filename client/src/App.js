@@ -1,10 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link
+import {
+  BrowserRouter as Router, Switch, Route, Link
 } from "react-router-dom";
-import './App.css';
+import "./App.css";
 import Nav from "./components/Nav";
-import { Login, Register,  } from "./components/Login";
-import  LoginShow  from "./components/LoginShow";
+import { LoginTest, Register } from "./components/LoginTest";
+import Home from "./components/Home";
+import LoginTestShow from "./components/LoginTestShow";
 
 function App() {
   return (
@@ -12,14 +14,16 @@ function App() {
       <div>
         <Nav />
         <Switch>
-          <Route exact path="/" component={Login} />
-          <Route exact path="/login" component={Login} />
+          {/* <IndexRoute /> */}
+          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={LoginTest} />
+          <Route exact path="/login" component={LoginTest} />
           <Route exact path="/register" component={Register} />
- Login_Style
-          <Route exact path="/shows" component={My_Shows} />
 
-          <Route exact path="/loginshow" component={LoginShow} />
- master
+          {/* <Route exact path="/shows" component={My_Shows} /> */}
+
+          <Route exact path="/loginshow" component={LoginTestShow} />
+
           {/* <Route component={NoMatch} /> */}
         </Switch>
       </div>
