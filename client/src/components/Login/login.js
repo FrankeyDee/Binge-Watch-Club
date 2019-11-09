@@ -12,26 +12,19 @@ export class Login extends React.Component {
     render() {
         return (
             <div className="base-container" ref={this.propsContainerRef}>
-                <div className="header"> Login </div>
-                <div className="content"></div>
-                
-                <div className="form">
-                    <div className="form-group">
-                        <label htmlFor="username"> Username </label>
-                        <input type="text" name="username" placeholder="username" />
+                <h1> Login </h1>
+                    <div className="form">
+                        <label htmlFor="exampleUsername" className="col-form-label" htmlFor="inputDefault">Username</label>
+                            <input type="text" className="input" placeholder="Enter username" />
                     </div>
-                    <div className="form-group">
-                        <label htmlFor="password"> Password </label>
-                        <input type="password" name="password" placeholder="password" />
+                    <div className="form">
+                        <label htmlFor="examplePassword" className="col-form-label" htmlFor="inputDefault">Password</label>
+                            <input type="password" className="input" placeholder="Enter Password" />
                     </div>
-                </div>
-                <div className="footer">
-                    <button type="button" className="btn">
-
+                    <button type="button" className="btn btn-outline-primary">
                         Login
                     </button>
                 </div>
-            </div>
         );
     }
 

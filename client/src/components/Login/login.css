@@ -13,7 +13,6 @@
 
 .base-container {
     margin-top: 50px;
-    margin-top: 300px;
     text-align: center;
 }
 
@@ -22,12 +21,13 @@
 }
 
 .form-group {
-    margin: 10px;
+    width: 300px;
+    text-align: center;
 }
 
 input {
     margin-left: 20px;
-    width: 120px;
+    width: 200px;
     height: 30px;
     font-size: 20px;
 }
