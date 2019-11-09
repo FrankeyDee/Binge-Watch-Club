@@ -14,6 +14,7 @@ function App() {
           <Route exact path="/" component={Login} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
+          <Route exact path="/shows" component={My_Shows} />
           {/* <Route component={NoMatch} /> */}
         </Switch>
       </div>
