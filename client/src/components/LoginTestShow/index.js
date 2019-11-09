@@ -2,7 +2,7 @@ import React from "react";
 import './loginshow.css'
 
 
-class LoginShow extends React.Component {
+class LoginTestShow extends React.Component {
 
     constructor(props) {
         super(props);
@@ -11,11 +11,11 @@ class LoginShow extends React.Component {
 
     render() {
         return (
-            <div className="base-container" ref={this.propsContainerRef}>
+            <div className="base-container">
                <h1>SHOWS</h1>
             </div>
         );
     }
 
 }
-export default LoginShow
+export default LoginTestShow
