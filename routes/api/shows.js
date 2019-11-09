@@ -12,7 +12,7 @@ router.route("/")
 // We want the app to save shows to a database, and be able to delete them after watching.  Do we need a .put?
 
 // Matches with "/api/shows/:id"
-// router
+router
   .route("/:id")
   .get(showController.findById)
   .put(showController.update)
