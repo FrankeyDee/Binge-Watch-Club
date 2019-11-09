@@ -12,7 +12,7 @@ export class Login extends React.Component {
     render() {
         return (
             <div className="base-container" ref={this.propsContainerRef}>
-                <div className="header"> Login </div>
+                <div className="header"> LoginTestingOnly </div>
                 <div className="content"></div>
                 
                 <div className="form">
@@ -26,13 +26,20 @@ export class Login extends React.Component {
                     </div>
                 </div>
                 <div className="footer">
-                    <button type="button" className="btn">
+                    <button type="button" className="btn" onClick={this.handleSubmit}>
 
                         Login
                     </button>
                 </div>
             </div>
+            
+
         );
+    }
+
+    handleSubmit = () => {
+        this.props.history.push("/loginshow");
+        // console.log(this.props)
     }
 
 }
