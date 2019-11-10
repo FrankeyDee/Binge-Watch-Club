@@ -15,8 +15,9 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div className="base-container">
-               <h1>HOMETESTING FRANKEY</h1>
+            <div className="jumbotron background">
+                <h1>Welcome to the Binge Watch Club!</h1>
+                    <p class="lead text-primary">Find titles of the most recommended shows to "binge watch." Registration allows you to search by mood and save your personalized list of shows you would like to binge. So, grab that popcorn and find your spot on the couch. It's time to binge watch!</p>
             </div>
         );
     }
