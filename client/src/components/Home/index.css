@@ -4,4 +4,27 @@
 
 .cardy {
     max-width: 20rem;
+    text-align: center;
+    margin: 10px;
+}
+
+img {
+    height: 200px;
+}
+
+.card-text {
+    padding-top: 5%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.jumbotron {
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
