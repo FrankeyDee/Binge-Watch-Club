@@ -26,7 +26,7 @@ export class Home extends React.Component {
 
                 <div className="jumbotron">
                     <h1>Welcome to Binge Watch Club!</h1>
-                        <p class="lead text-primary">Find titles of the most recommended shows to "binge watch." Registration allows you to search by mood and save your personalized list of shows you would like to binge. So, grab that popcorn and find your spot on the couch. It's time to binge watch!</p>
+                        <p class="lead text-primary">Find titles of the most recommended shows to "binge watch." Registration allows you to search by mood and save your personalized list of shows you would like to binge. So, grab that popcorn and find your spot on the couch. Let's watch!</p>
                 </div>
                 <Slider />
             </div>
