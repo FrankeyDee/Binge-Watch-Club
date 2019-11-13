@@ -5,7 +5,8 @@
 .cardy {
     width: 250px;
     text-align: center;
-    margin: 5px;
+    margin: 10px;
+
 }
 
 img {
@@ -20,7 +21,8 @@ img {
 
 .card-container {
     display: flex;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
     overflow-x: auto;
     margin-left: 5%;
     margin-right: 5%;

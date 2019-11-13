@@ -1,5 +1,7 @@
+require("dotenv").config();
 const router = require("express").Router();
 const showController = require("../../controllers/showController");
+const axios = require("axios");
 
 
 // Matches with "/api/shows"

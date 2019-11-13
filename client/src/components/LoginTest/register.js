@@ -4,10 +4,6 @@ import './register.css'
 
 export class Register extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
-
 
     render() {
         return (
