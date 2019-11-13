@@ -3,13 +3,15 @@
 }
 
 .cardy {
-    max-width: 20rem;
+    width: 250px;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
 }
 
 img {
     height: 200px;
+    width: 7rem;
+    vertical-align: baseline;
 }
 
 .card-text {
