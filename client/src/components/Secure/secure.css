@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.secure {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.secure-btn {
+    text-align: center;   
+    border-style: solid;
+    border-width:3px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px; 
+    background:rgb(42, 160, 111);
+    width:335px;
+    padding:20px;
+    /*float:left; remove this*/
+    margin:115px;
+ 
+    /*add this*/ 
+    display:inline-block;
+    position:relative;
+}

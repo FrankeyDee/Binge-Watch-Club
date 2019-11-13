@@ -17,6 +17,11 @@
   color: white;
 }
 
+.App-link {
+  color: #09d3ac;
+}
+
+
 div::after {
   content: "";
   background: url(bg.jpg);
@@ -29,3 +34,4 @@ div::after {
   position: absolute;
   z-index: -1;   
 }
+
