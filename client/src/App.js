@@ -7,6 +7,8 @@ import Nav from "./components/Nav";
 import { LoginTest, Register } from "./components/LoginTest";
 import { Home } from "./components/Home";
 import LoginTestShow from "./components/LoginTestShow";
+import Secure from "./components/Secure";
+
 
 function App() {
   return (
@@ -15,11 +17,14 @@ function App() {
         <Nav />
         <Switch>
           {/* <IndexRoute /> */}
+          
           <Route exact path="/" component={Home} />
           {/* <Route exact path="/" component={LoginTest} /> */}
           <Route exact path="/login" component={LoginTest} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/loginshow" component={LoginTestShow} />
+          <Route exact path="/logout" component={Secure} />
+        
           {/* <Route component={NoMatch} /> */}
         </Switch>
       </div>

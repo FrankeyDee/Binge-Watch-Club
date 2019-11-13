@@ -3,6 +3,83 @@
     margin: 0;
 }
 
-.register {
-    color: blue;
+.base-container {
+    margin-top: 150px;
 }
+
+
+
+.register {
+    text-align: center;   
+    border-style: solid;
+    border-width:3px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px; 
+    background:yellow;
+    width:335px;
+    padding:20px;
+    /*float:left; remove this*/
+    margin:15px;
+ 
+    /*add this*/ 
+    display:inline-block;
+    position:relative;
+}
+
+.register-btn {
+    text-align: center;   
+    border-style: solid;
+    border-width:3px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px; 
+    background:rgb(0, 255, 115);
+    width:335px;
+    padding:20px;
+    /*float:left; remove this*/
+    margin:15px;
+ 
+    /*add this*/ 
+    display:inline-block;
+    position:relative;
+}
+
+.form-group {
+    text-align: center;   
+    border-style: solid;
+    border-width:3px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px; 
+    background:rgb(0, 208, 255);
+    width:335px;
+    padding:20px;
+    /*float:left; remove this*/
+    margin:15px;
+ 
+    /*add this*/ 
+    display:inline-block;
+    position:relative;
+
+}
+
+.un {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link-to-register {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+ a:hover {
+    text-decoration: none;
+  }
+
+  .base-container a:hover
+  {
+      color: rgb(255, 47, 0);
+  }

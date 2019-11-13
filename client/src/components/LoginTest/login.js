@@ -6,41 +6,43 @@ export class LoginTest extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            username: '',
+            password: ''
+        };
     }
 
+    handleSubmit = event => {
+        event.preventDefault();
+        
+    }
 
     render() {
         return (
-            <div className="base-container" >
 
-                <div className="header"> LoginTestingOnly </div>
-                <div className="content"></div>
-                
-                <div className="form">
-                    <div className="form-group">
-                        <label htmlFor="username"> Username </label>
-                        <input type="text" name="username" placeholder="username" />
-                    </div>
-                    <div className="form">
-                        <label htmlFor="examplePassword" className="col-form-label" htmlFor="inputDefault">Password</label>
-                            <input type="password" className="input" placeholder="Enter Password" />
-                    </div>
+        <div className="flexbox base-container">
+		<div className="title-box">
+			<h1 className="title loginpage">Login</h1>
+		</div>
+		<form action="/login" method="post" className="form">
+			<div className="input-container logintest">
+				<input id="username" type="text" name="username" value={this.state.username} required />
+				
+				<label for="username" className="input-label username">Username</label>
+			</div>
+            <br></br>
+			<div className="input-container logintest">
+				<input id="password" type="password" name="password" value={this.state.password} required />
+				<label for="password" class="input-label password">Password</label>
+			</div>
+            <br></br>
+			<button className="btn login-btn submit" onClick={this.handleSubmit}>SUBMIT</button>
+		</form>
+		<a href="/register" className="link-to-register un">First time? Register here</a>
 
-                </div>
-                <div className="footer">
-                    <button type="button" className="btn" onClick={this.handleSubmit}>
-
-                        LoginTestingOnly 
-                    </button>
-                </div>
-            </div>
+        </div>
             
         );
-    }
-
-    handleSubmit = () => {
-        this.props.history.push("/loginshow");
-        // console.log(this.props)
     }
 
 }
