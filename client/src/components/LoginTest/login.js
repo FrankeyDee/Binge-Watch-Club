@@ -4,18 +4,6 @@ import './login.css'
 
 export class LoginTest extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            username: '',
-            password: ''
-        };
-    }
-
-    handleSubmit = event => {
-        event.preventDefault();
-        
-    }
 
     render() {
         return (
