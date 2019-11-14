@@ -1,3 +1,3 @@
 export { Home } from "./banner";
-export { Slider } from "./slider";
+export { Movies } from "./slider";
 export { About } from "./about";
