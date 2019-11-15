@@ -23,7 +23,7 @@ function App() {
           <Route exact path="/login" component={LoginTest} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/loginshow" component={LoginTestShow} />
-          <Route exact path="/logout" component={Secure} />
+          <Route exact path="/secure" component={Secure} />
         
           {/* <Route component={NoMatch} /> */}
         </Switch>

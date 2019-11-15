@@ -1,4 +1,14 @@
-import React from "react";
+// import React from "react";
+import React, {
+    Component,
+    Fragment
+} from "react";
+import cookie from 'react-cookies'
+import {
+    Redirect
+} from 'react-router-dom';
+import Title from "../UsernameForm/Title";
+import API from "../Login-Reg-Utils/API";
 import './secure.css'
 
 
@@ -6,50 +16,69 @@ class Secure extends React.Component {
 
     constructor(props) {
         super(props);
-
-        // Secure Testing
-            // const logoutBtn = document.querySelector('#logout');
-            // logoutBtn.addEventListener('click', event => {
-            //     fetch('/logout', { method: 'POST' })
-            //         .then(() => window.location.reload())
-            //         .catch(err => console.error(err));
-            // });
-    
-          
-
-    
+        this.state = {
+            user: null,
+            loading: true
+        };
     }
+
+    componentDidMount() {
+        this.validateCookie();
+    }
+
+    validateCookie() {
+        // const cookieValue = cookie.load('connect.sid');
+        API.validateCookie()
+            .then(res => res.json())
+            .then(res => {
+                console.warn(res);
+                if (res.username) {
+                    this.setState({
+                        user: res,
+                        loading: false
+                    });
+                } else {
+                    this.setState({
+                        loading: false
+                    });
+                }
+            })
+            .catch(err => this.setState({
+                loading: false
+            }))
+    }
+
+    handleLogout() {
+        API.logout()
+            .then(res => window.location.reload())
+            .catch(err => console.error(err));
+    }
+
+
+
+
+    // handleSubmit = () => {
+    //     this.props.history.push("/loginshow");
+    //     // console.log(this.props)
+    // }
+
+
 
 
     render() {
-        return (
-            
-            <div className="flexbox">
-            <div className="title-box">
-                <h1 className="title secure">This is a secure page for Testing only</h1>
-            </div>
-            {/* <button id="logout" className="btn">LOG OUT</button> */}
 
-            <button type="button" className="un btn secure-btn" onClick={this.handleSubmit}>
-
-                Log out of Secure Testing  
-            </button>
-        </div>
-            
+        if (this.state.loading) {
+            return <div> Loading... </div>;
+        }
+        if (!this.state.user) {
+            return <Redirect to = '/login' />
+        }
+        return ( <Fragment>
+            <Title> This is a secure page </Title> <button id = "logout" onClick = {this.handleLogout} className = "btn">LOG OUT</button></Fragment>
         );
 
-        
-        
     }
 
-    handleSubmit = () => {
-        this.props.history.push("/login");
-        // console.log(this.props)
-    }
-
-
-   
-    
 }
 
 export default Secure

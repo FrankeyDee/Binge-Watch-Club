@@ -83,3 +83,21 @@
   {
       color: rgb(255, 47, 0);
   }
+
+
+  .already-account {
+    text-align: center;   
+    border-style: solid;
+    border-width:3px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px; 
+    background:rgb(255, 136, 0);
+    width:335px;
+    padding:20px;
+    /*float:left; remove this*/
+    margin:15px;
+ 
+    /*add this*/ 
+    display:inline-block;
+    position:relative;
+}
