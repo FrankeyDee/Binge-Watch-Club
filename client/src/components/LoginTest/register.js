@@ -16,13 +16,13 @@ import '.././UsernameForm/Title.css'
 
 export class Register extends React.Component {
 
-<<<<<<< Updated upstream
-=======
+
     constructor(props) {
         super(props);
         this.state = {
             username: '',
-            password: ''
+            password: '',
+            error: null
         }
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -42,18 +42,25 @@ export class Register extends React.Component {
         event.preventDefault();
 
         API.register(this.state.username, this.state.password)
-            .then(res => console.info(res))
-               .then(res => this.props.history.push('/secure'))
+            .then(res => res.json())
+            .then(res => {
+                if (res.error) {
+                    console.error(res.error)
+                    this.setState({ error: res.error })
+                } else {
+                    this.props.history.push('/secure')
+                }
+            })
             .catch(err => console.error(err));
     }
 
->>>>>>> Stashed changes
 
     render() {
         return (
             <Fragment >
             <Title > Register </Title> 
-            <Form inputHandler = {this.handleInputChange} submitHandler = {this.handleSubmit}/> 
+            { this.state.error && <span style={{backgroundColor: "red"}}>{ this.state.error }</span>}
+            <Form inputHandler = {this.handleInputChange} submitHandler = {this.handleSubmit}/>
             <Link to = "/login" className = "already-account link-to-register" > Already have an account ? Login here </Link> 
             </Fragment >
 

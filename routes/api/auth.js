@@ -11,7 +11,9 @@ router.route('/register')
 
 // Matches with '/api/auth/login'
 router.route('/login')
-    .post((req, res, next) => { console.info('MADE IT'); next(); }, passport.authenticate('local'), (req, res) => { res.sendStatus(200); });
+    .post(passport.authenticate('local'), (req, res) => {
+        res.sendStatus(200);
+    });
 
 router.route('/session')
     .get((req, res) => {
