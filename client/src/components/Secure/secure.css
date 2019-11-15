@@ -11,6 +11,8 @@
 
 
 .secure-btn {
+    color: blue;
+    font-weight: bold;
     text-align: center;   
     border-style: solid;
     border-width:3px;
@@ -26,3 +28,4 @@
     display:inline-block;
     position:relative;
 }
+

@@ -1,46 +1,63 @@
-import React from "react";
-import './register.css'
+// import React from "react";
+import React, {
+    Component,
+    Fragment
+} from "react";
+import {
+    Link
+} from "react-router-dom";
+import API from "../Login-Reg-Utils/API";
+import Title from "../UsernameForm/Title";
+import Form from "../UsernameForm/Form";
+import './register.css';
+import '.././UsernameForm/Form.css';
+import '.././UsernameForm/Title.css'
 
 
 export class Register extends React.Component {
 
+<<<<<<< Updated upstream
+=======
+    constructor(props) {
+        super(props);
+        this.state = {
+            username: '',
+            password: ''
+        }
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleInputChange(event) {
+        const {
+            name,
+            value
+        } = event.target;
+        this.setState({
+            [name]: value
+        });
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+
+        API.register(this.state.username, this.state.password)
+            .then(res => console.info(res))
+               .then(res => this.props.history.push('/secure'))
+            .catch(err => console.error(err));
+    }
+
+>>>>>>> Stashed changes
 
     render() {
         return (
-            <div className="base-container">
-                <div className="header">Register Testing Only </div>
-                <div className="register un"> Register </div>
-                
-                <div className="form">
-                    <div className="form-group">
-                        <label htmlFor="username" className="un"> Username </label>
-                        <input type="text" name="username" placeholder="username" />
-                    </div>
-                    <br></br>
-                    <div className="form-group">
-                        <label htmlFor="email" className="un"> Email </label>
-                        <input type="text" name="email" placeholder="email" />
-                    </div>
-                    <br></br>
-                    <div className="form-group">
-                        <label htmlFor="password" className="un"> Password </label>
-                        <input type="password" name="password" placeholder="password" />
-                    </div>
-                </div>
-                <div className="footer footer-btn">
-                    <button type="button" className="btn register-btn un" onClick={this.handleSubmit}>
+            <Fragment >
+            <Title > Register </Title> 
+            <Form inputHandler = {this.handleInputChange} submitHandler = {this.handleSubmit}/> 
+            <Link to = "/login" className = "already-account link-to-register" > Already have an account ? Login here </Link> 
+            </Fragment >
 
-                        Register Test Only
-                    </button>
-                </div>
-                <a href="/login" className="link-to-register">Already have an account? Login here</a>
-            </div>
         );
-    }
-
-    handleSubmit = () => {
-        this.props.history.push("/loginshow");
-         //console.log(this.props)
     }
 
 }

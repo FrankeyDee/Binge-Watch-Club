@@ -26,10 +26,12 @@ module.exports = {
             })
             .catch(err => done(err));
     },
-    serializeUser: (user, done) => done(null, user._id),
+    serializeUser: (user, done) => { console.info('serialize', user); done(null, user._id); },
     deserializeUser: (id, done) => {
+        console.info('deserialize', id)
         db.User.findById(id)
             .then(user => {
+                console.info(user);
                 done(null, user);
             })
             .catch(err => done(err));
