@@ -59,9 +59,12 @@ export class Register extends React.Component {
         return (
             <Fragment >
                 <Title > Register </Title> 
-                { this.state.error && <div className="alert alert-dismissible alert-danger">
+                { this.state.error && 
+                <div className="alert-container">
+                <div className="alert alert-dismissible alert-danger">
                 <button className="close" data-dismiss="alert"><a href="/register">&times;</a></button>
                 <strong>{ this.state.error }</strong>
+                </div>
                 </div> }
                 <Form inputHandler={this.handleInputChange} submitHandler={this.handleSubmit}/>
                 <div className="form-wrap">

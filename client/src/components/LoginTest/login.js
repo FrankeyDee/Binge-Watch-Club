@@ -49,9 +49,11 @@ export class LoginTest extends React.Component {
         <Fragment>
           <Title>Welcome Back!</Title>
           { this.state.error && 
+          <div className="alert-container">
           <div className="alert alert-dismissible alert-danger">
             <button className="close" data-dismiss="alert"><a href="/login">&times;</a></button>
             <strong>{ this.state.error }</strong>
+            </div>
             </div> }
           <Form inputHandler={this.handleInputChange} submitHandler={this.handleSubmit} />
           <div className="form-wrap">
