@@ -1,20 +1,27 @@
 import React from "react";
-import "./Form.css";
+// import "./Form.css";
 
 const Form = ({ inputHandler, submitHandler }) => (
-  <form className="form" onSubmit={submitHandler}>
-    <div className="input-container">
-      <input id="username" type="text" name="username" onChange={inputHandler} required />
-      <span className="input-underline"></span>
-      <label htmlFor="username" className="input-label">Username</label>
-    </div>
-    <div className="input-container">
-      <input id="password" type="password" name="password" onChange={inputHandler} required />
-      <span className="input-underline"></span>
-      <label htmlFor="password" className="input-label">Password</label>
-    </div>
-    <button className="btn form-register">SUBMIT</button>
-  </form>
+  <div className="form-wrap">
+    <form className="form-group" onSubmit={submitHandler}>
+
+      <input id="inputDefault" type="text" name="username" className="form-control" onChange={inputHandler} required />
+        <span className="input-underline"></span>
+        <label htmlFor="username" className="text-primary">Username</label>
+ 
+      <br></br>
+      <input id="inputDefault" type="password" name="password" className="form-control" onChange={inputHandler} required />
+        <span className="input-underline"></span>
+        <label htmlFor="password" className="text-primary">Password</label>
+      <br></br>
+      <div className="button-holder">
+        <button type="button" className="btn btn-outline-primary center-btn">SUBMIT</button>
+        <br></br>
+        <br></br>
+        <a href="/register" className="btn btn-outline-info center-btn">First time? Register here</a>
+      </div>
+    </form>
+  </div>
 );
 
 export default Form;
