@@ -1,9 +1,9 @@
 import React from "react";
-import "./Title.css";
+// import "./Title.css";
 
 const Title = ({ children }) => (
   <div className="title-box">
-    <h1 className="title">{ children }</h1>
+    <h1 className="title display-3">{ children }</h1>
   </div>
 );
 

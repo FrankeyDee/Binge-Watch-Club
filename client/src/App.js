@@ -19,7 +19,6 @@ function App() {
           {/* <IndexRoute /> */}
           
           <Route exact path="/" component={Home} />
-          {/* <Route exact path="/" component={LoginTest} /> */}
           <Route exact path="/login" component={LoginTest} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/loginshow" component={LoginTestShow} />
