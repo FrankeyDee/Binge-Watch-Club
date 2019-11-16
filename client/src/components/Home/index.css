@@ -11,7 +11,7 @@
 
 img {
     height: 200px;
-    width: 7rem;
+    width: 10rem;
     vertical-align: baseline;
 }
 
@@ -24,11 +24,11 @@ img {
     /* flex-wrap: nowrap; */
     /* flex-wrap: wrap;  */
     overflow-x: auto;
-    margin-left: 5%;
-    margin-right: 5%;
+    /* margin-left: 3%;
+    margin-right: 3%; */
 }
 
-.jumbotron {
-    padding-bottom: 15px;
-    padding-top: 15px;
+.contain {
+    margin: 25px;
+    
 }
