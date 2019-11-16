@@ -92,7 +92,7 @@ input:valid ~ .input-label {
     margin: 40px;
 	height: 60px;
 	width: 180px;
-	font-family: 'Fjalla One';
+	/* font-family: 'Fjalla One'; */
 	font-size: 2em;
 	background-color: #CDEBE9;
 	border-radius: 10px;

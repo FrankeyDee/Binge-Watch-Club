@@ -60,8 +60,10 @@ export class Register extends React.Component {
             <Fragment >
             <Title > Register </Title> 
             { this.state.error && <span style={{backgroundColor: "red"}}>{ this.state.error }</span>}
-            <Form inputHandler = {this.handleInputChange} submitHandler = {this.handleSubmit}/>
-            <Link to = "/login" className = "already-account link-to-register" > Already have an account ? Login here </Link> 
+                <Form inputHandler = {this.handleInputChange} submitHandler = {this.handleSubmit}/>
+                <div className="form-wrap">
+                <Link to="/login" className="btn btn-outline-info center-btn">Already have an account ? Login here</Link>
+                </div>
             </Fragment >
 
         );

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import API from "../Login-Reg-Utils/API";
 import Title from "../UsernameForm/Title";
 import Form from "../UsernameForm/Form";
-// import './login.css';
+import './login.css';
 // import '.././UsernameForm/Form.css';
 // import '.././UsernameForm/Title.css'
 
@@ -50,7 +50,9 @@ export class LoginTest extends React.Component {
           <Title>Welcome Back!</Title>
           { this.state.error && <span style={{backgroundColor: "red"}}>{ this.state.error }</span>}
           <Form inputHandler={this.handleInputChange} submitHandler={this.handleSubmit} />
-          {/* <Link to="/register" className="btn btn-outline-info center-btn">First time? Register here</Link> */}
+          <div className="form-wrap">
+          <Link to="/register" className="btn btn-outline-info center-btn">First time? Register here</Link>
+          </div>
         </Fragment>
       );
     }

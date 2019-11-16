@@ -16,9 +16,6 @@ const Form = ({ inputHandler, submitHandler }) => (
       <br></br>
       <div className="button-holder">
         <button type="button" className="btn btn-outline-primary center-btn">SUBMIT</button>
-        <br></br>
-        <br></br>
-        <a href="/register" className="btn btn-outline-info center-btn">First time? Register here</a>
       </div>
     </form>
   </div>
