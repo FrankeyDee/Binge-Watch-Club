@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
+const cors = require("cors");
 
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
@@ -20,11 +21,9 @@ const PORT = process.env.PORT || 3001;
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/zacdb");
 
 // Define middleware here
-app.use(express.urlencoded({
-	extended: true
-}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+app.use(cors());
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -40,7 +39,7 @@ const sessConfig = {
 	}),
 	cookie: {
 		path: '/',
-		httpOnly: true,
+		httpOnly: false,
 		maxAge: 5 * 60 * 1000
 	}
 }
