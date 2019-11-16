@@ -24,7 +24,7 @@
 
 div::after {
   content: "";
-  background: url(bg.jpg);
+  background: url(https://images.unsplash.com/photo-1556889487-b6f8d3fc728b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2653&q=80);
   background-size: cover;
   opacity: 0.2;
   top: 0;

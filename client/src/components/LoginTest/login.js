@@ -47,7 +47,7 @@ export class LoginTest extends React.Component {
     render() {
       return (
         <Fragment>
-          <Title>Login</Title>
+          <Title>Welcome Back!</Title>
           { this.state.error && <span style={{backgroundColor: "red"}}>{ this.state.error }</span>}
           <Form inputHandler={this.handleInputChange} submitHandler={this.handleSubmit} />
           {/* <Link to="/register" className="btn btn-outline-info center-btn">First time? Register here</Link> */}
