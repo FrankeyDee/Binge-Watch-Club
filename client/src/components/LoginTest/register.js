@@ -10,8 +10,8 @@ import API from "../Login-Reg-Utils/API";
 import Title from "../UsernameForm/Title";
 import Form from "../UsernameForm/Form";
 import './register.css';
-import '.././UsernameForm/Form.css';
-import '.././UsernameForm/Title.css'
+import '../UsernameForm/Form.css';
+import '../UsernameForm/Title.css'
 
 
 export class Register extends React.Component {
@@ -58,11 +58,11 @@ export class Register extends React.Component {
     render() {
         return (
             <Fragment >
-            <Title > Register </Title> 
-            { this.state.error && <span style={{backgroundColor: "red"}}>{ this.state.error }</span>}
-                <Form inputHandler = {this.handleInputChange} submitHandler = {this.handleSubmit}/>
+                <Title > Register </Title> 
+                { this.state.error && <span style={{backgroundColor: "red"}}>{ this.state.error }</span>}
+                <Form inputHandler={this.handleInputChange} submitHandler={this.handleSubmit}/>
                 <div className="form-wrap">
-                <Link to="/login" className="btn btn-outline-info center-btn">Already have an account ? Login here</Link>
+                    <Link to="/login" className="btn btn-outline-info center-btn">Already have an account ? Login here</Link>
                 </div>
             </Fragment >
 

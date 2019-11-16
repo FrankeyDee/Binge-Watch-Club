@@ -6,16 +6,19 @@ const Form = ({ inputHandler, submitHandler }) => (
     <form className="form-group card" onSubmit={submitHandler}>
 
       <input id="inputDefault" type="text" name="username" className="form-control" onChange={inputHandler} required />
-        <span className="input-underline"></span>
-        <label htmlFor="username" className="text-primary">Username</label>
+      <span className="input-underline"></span>
+      <label htmlFor="username" className="text-primary">Username</label>
  
-      <br></br>
-      <input id="inputDefault" type="password" name="password" className="form-control" onChange={inputHandler} required />
-        <span className="input-underline"></span>
-        <label htmlFor="password" className="text-primary">Password</label>
-      <br></br>
+      <br/>
+      <input id="in
+      putDefault" type="password" name="password" className="form-control" onChange={inputHandler} required />
+      <span className="input-underline"></span>
+      <label htmlFor="password" className="text-primary">Password</label>
+
+      <br/>
+
       <div className="button-holder">
-        <button type="button" className="btn btn-outline-primary center-btn">SUBMIT</button>
+        <button className="btn btn-outline-primary center-btn">SUBMIT</button>
       </div>
     </form>
   </div>
