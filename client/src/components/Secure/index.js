@@ -74,7 +74,11 @@ class Secure extends React.Component {
             return <Redirect to = '/login' />
         }
         return ( <Fragment>
-            <Title> This is a secure page </Title> <button id = "logout" onClick = {this.handleLogout} className = "btn">LOG OUT</button></Fragment>
+            <Title> My Shows To Binge </Title> 
+            <div className="logout-button">
+            <button id = "logout" onClick = {this.handleLogout} className = "btn btn-outline-danger">LOG OUT</button>
+            </div>
+            </Fragment>
         );
 
     }
