@@ -13,13 +13,20 @@ module.exports = {
                                 hash
                             })
                             .then(newUser => {
-                                res.sendStatus(200);
+                                res.json(newUser);
                             })
-                            .catch(err => res.status(500).send(err.message));
+                            .catch(err => {
+                                console.error(err);
+                                if (err.code === 11000) {
+                                    res.status(400).json({ error: "Username already exist" });
+                                    return;
+                                }
+                                res.status(500).json({ error: err.message })
+                            });
                     })
-                    .catch(err => res.status(500).send(err.message));
+                    .catch(err => res.status(500).json({ error: err.message }));
             })
-            .catch(err => res.status(500).send(err.message));
+            .catch(err => res.status(500).json({ error: err.message }));
     },
     logout: (req, res) => {
         req.logout();
