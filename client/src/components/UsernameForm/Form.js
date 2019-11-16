@@ -5,13 +5,13 @@ const Form = ({ inputHandler, submitHandler }) => (
   <div className="form-wrap">
     <form className="form-group card" onSubmit={submitHandler}>
 
-      <input id="inputDefault" type="text" name="username" className="form-control" onChange={inputHandler} required />
+      <input id="inputDefault" type="text" name="username" className="form-control btn-outline-secondary" onChange={inputHandler} required />
       <span className="input-underline"></span>
       <label htmlFor="username" className="text-primary">Username</label>
  
       <br/>
       <input id="in
-      putDefault" type="password" name="password" className="form-control" onChange={inputHandler} required />
+      putDefault" type="password" name="password" className="form-control btn-outline-secondary" onChange={inputHandler} required />
       <span className="input-underline"></span>
       <label htmlFor="password" className="text-primary">Password</label>
 

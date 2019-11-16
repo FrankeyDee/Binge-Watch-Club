@@ -51,7 +51,7 @@ export class LoginTest extends React.Component {
           { this.state.error && <span style={{backgroundColor: "red"}}>{ this.state.error }</span>}
           <Form inputHandler={this.handleInputChange} submitHandler={this.handleSubmit} />
           <div className="form-wrap">
-          <Link to="/register" className="btn btn-outline-info center-btn">First time? Register here</Link>
+          <Link to="/register" className="btn btn-info center-btn">First time? Register here</Link>
           </div>
         </Fragment>
       );
