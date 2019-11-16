@@ -113,3 +113,8 @@
     display:inline-block;
     position:relative;
 }
+
+.alert-container {
+    width: 400px;
+    margin: auto;
+}
