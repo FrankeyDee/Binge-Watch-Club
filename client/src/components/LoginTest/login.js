@@ -36,7 +36,7 @@ export class LoginTest extends React.Component {
         API.login(this.state.username, this.state.password)
           .then(res => {
             if (res.status === 401) {
-              this.setState({ error: "username or password invalid" })
+              this.setState({ error: "Whoops! That username or password invalid! Try Again, homie!" })
             } else if (res.ok) {
               this.props.history.push('/secure')
             }
@@ -48,7 +48,11 @@ export class LoginTest extends React.Component {
       return (
         <Fragment>
           <Title>Welcome Back!</Title>
-          { this.state.error && <span style={{backgroundColor: "red"}}>{ this.state.error }</span>}
+          { this.state.error && 
+          <div className="alert alert-dismissible alert-danger">
+            <button className="close" data-dismiss="alert"><a href="/login">&times;</a></button>
+            <strong>{ this.state.error }</strong>
+            </div> }
           <Form inputHandler={this.handleInputChange} submitHandler={this.handleSubmit} />
           <div className="form-wrap">
           <Link to="/register" className="btn btn-info center-btn">First time? Register here</Link>

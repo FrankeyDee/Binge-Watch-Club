@@ -59,7 +59,10 @@ export class Register extends React.Component {
         return (
             <Fragment >
                 <Title > Register </Title> 
-                { this.state.error && <span style={{backgroundColor: "red"}}>{ this.state.error }</span>}
+                { this.state.error && <div className="alert alert-dismissible alert-danger">
+                <button className="close" data-dismiss="alert"><a href="/register">&times;</a></button>
+                <strong>{ this.state.error }</strong>
+                </div> }
                 <Form inputHandler={this.handleInputChange} submitHandler={this.handleSubmit}/>
                 <div className="form-wrap">
                     <Link to="/login" className="btn btn-info center-btn">Already have an account ? Login here</Link>
