@@ -17,16 +17,16 @@ import "pure-react-carousel/dist/react-carousel.es.css";
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ query: 'buffy+slayer' })
+            body: JSON.stringify({ query: '35' })
         })
             .then(res => res.json())
-            .then(res => res.Search)
-            .then(res => res.reduce((movieObj, movie) => {
-                movieObj.push({ title: movie.Title, poster: movie.Poster, year: movie.Year, plot: movie.Plot });
+            .then(res => res.results)
+            .then(res => res.reduce((movieObj, show) => {
+                movieObj.push({ name: show.name, poster: 'https://image.tmdb.org/t/p/w400' + show.poster_path, overview: show.overview });
 
                 return movieObj;
             }, []))
-            .then(movies => this.setState({ movies: movies }))
+            .then(show => this.setState({ movies: show }))
             .catch(err => console.error(err))
     }
 
@@ -41,13 +41,13 @@ import "pure-react-carousel/dist/react-carousel.es.css";
                 <Slider>
                     <div className="card-container">
                     <ButtonNext className="btn-outline-secondary">&lt;&lt;</ButtonNext>
-
+                    {/* {console.log(this.state.movies)} */}
                     {this.state.movies.map(item => (
                         <div className="card text-white bg-dark mb-3 cardy">
-                            <div className="card-header">{item.year}</div>
+                            <div className="card-header">{item.name}</div>
                             <div className="card-body text-white">
-                                <img src={item.poster} alt={item.title} />
-                                <h4 className="text-white">{item.title}</h4>
+                                <img src={item.poster} alt={item.name} />
+                                <h4 className="text-white">{item.overview}</h4>
                             </div>
                         </div>
                     ))}
