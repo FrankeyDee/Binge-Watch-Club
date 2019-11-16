@@ -12,8 +12,9 @@ import "pure-react-carousel/dist/react-carousel.es.css";
     }
 
     loadMovies = () => {
- 
-        fetch('http://www.omdbapi.com/?apikey=848e3817&s=stranger+things&plot')
+        // const stateObj = {};
+        // fetch('http://www.omdbapi.com/?i=tt3896198&apikey=848e3817')
+        fetch('http://www.omdbapi.com/?apikey=848e3817&s=series&plot=full')
             .then(res => res.json())
             .then(res => res.Search)
             .then(res => res.reduce((movieObj, movie) => {
