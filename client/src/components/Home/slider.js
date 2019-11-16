@@ -32,10 +32,10 @@ import "pure-react-carousel/dist/react-carousel.es.css";
             naturalSlideWidth={100}
             totalSlides={2}>
 
-                <ButtonBack>Back</ButtonBack>
                 
                 <Slider>
             <div className="card-container">
+                <ButtonNext>Next</ButtonNext>
 
                     {this.state.movies.map(item => (
                         <div className="card text-white bg-dark mb-3 cardy">
@@ -49,9 +49,9 @@ import "pure-react-carousel/dist/react-carousel.es.css";
                             </div>
                         </div>
                     ))}
+                    <ButtonBack>Back</ButtonBack>
                </div>
                     </Slider>
-                    <ButtonNext>Next</ButtonNext>
                     </CarouselProvider>
         );
     };
