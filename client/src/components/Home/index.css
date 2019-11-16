@@ -2,12 +2,12 @@
     opacity: 0.1;
 }
 
-.cardy {
-    width: 250px;
+ .cardy {
+    width: 350px;
     text-align: center;
     margin: 10px;
 
-}
+} 
 
 img {
     height: 200px;
@@ -22,7 +22,7 @@ img {
 .card-container {
     display: flex;
     /* flex-wrap: nowrap; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;  */
     overflow-x: auto;
     margin-left: 5%;
     margin-right: 5%;
