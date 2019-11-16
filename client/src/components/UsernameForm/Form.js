@@ -3,7 +3,7 @@ import React from "react";
 
 const Form = ({ inputHandler, submitHandler }) => (
   <div className="form-wrap">
-    <form className="form-group card" onSubmit={submitHandler}>
+    <form className="form-group" onSubmit={submitHandler}>
 
       <input id="inputDefault" type="text" name="username" className="form-control" onChange={inputHandler} required />
         <span className="input-underline"></span>
