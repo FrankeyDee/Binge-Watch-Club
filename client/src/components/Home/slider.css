@@ -1,4 +1,8 @@
 .imgStyle {
-    width: 55px; 
+    width: 400px; 
     display: block; 
+}
+
+h4 {
+    font-size: 15px;
 }
