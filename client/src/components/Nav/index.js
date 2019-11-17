@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 // import { LoginTest, Register } from "./components/LoginTest";
 // // import Home from "./components/Home";
 // import LoginTestShow from "./components/LoginTestShow";
@@ -23,11 +24,24 @@ function Nav() {
         <a className="nav-link" href="/register">Register</a>
       </li>
     </ul>
-
+{/* 
     <form className="form-inline my-2 my-lg-0">
       <input className="form-control mr-sm-2" type="text" placeholder="Search" />
       <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    </form> */}
+
+    <div className="search">
+      <select className="form-control mr-sm-2 dropdown" id="exampleSelect1">
+        <option>Action</option>
+        <option>Animated</option>
+        <option>Comedy</option>
+        <option>Romance</option>
+        <option>Sci Fi</option>
+      </select>
+      <br></br>
+      <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </div>
+
 
   </div>
 </nav>
