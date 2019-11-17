@@ -38,7 +38,7 @@ export class Home extends React.Component {
                 <div className="recent">
                 <Title>Recently Recommended</Title>
                 </div>
-                <br></br>
+
                
                <Slider />
             
