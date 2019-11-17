@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../models-test-auth");
 
 
 // Defining methods for the booksController
