@@ -30,20 +30,21 @@ function Nav() {
       <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </form> */}
 
-    <div className="search">
-      <select className="form-control mr-sm-2 dropdown" id="exampleSelect1">
+    {/* <div className="search"> */}
+      <select className="form-control mr-sm-2 dropdown" placeholder="Search" id="exampleSelect1">
         <option>Action</option>
         <option>Animated</option>
         <option>Comedy</option>
         <option>Romance</option>
         <option>Sci Fi</option>
       </select>
-      <br></br>
+    </div>
+    <div>
       <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </div>
 
 
-  </div>
+
 </nav>
   );
 }
