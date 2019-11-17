@@ -6,6 +6,9 @@ import React from "react";
 import "./index.css";
 import Slider from "./slider";
 import Title from "../UsernameForm/Title";
+import { CarouselProvider } from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
+import "./slider.css"
 
 
 // import React, { useState } from 'react';

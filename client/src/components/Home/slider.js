@@ -38,6 +38,7 @@ import "./slider.css"
             naturalSlideHeight={200}
             naturalSlideWidth={400}
             totalSlides={12}>
+                
  
                 <Slider>
                     <div className="card-container">
@@ -48,7 +49,7 @@ import "./slider.css"
                             <div className="card-header">{item.name}</div>
                             <div className="card-body text-white">
                                 <img src={item.poster} alt={item.name} />
-                                <h4 className="text-white">{item.overview}</h4>
+                                <div id="overview" className="text-white">{item.overview}</div>
                             </div>
                         </div>
                     ))}
