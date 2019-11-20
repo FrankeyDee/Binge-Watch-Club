@@ -3,11 +3,8 @@
 
 
 import React from "react";
-import "./index.css";
-import Movies from "./slider";
 import Title from "../UsernameForm/Title";
-import "pure-react-carousel/dist/react-carousel.es.css";
-import "./slider.css"
+import "./index.css";
 
 
 // import React, { useState } from 'react';
@@ -17,7 +14,7 @@ import "./slider.css"
 //   const [activeItemIndex, setActiveItemIndex] = useState(0);
 //   const chevronWidth = 40;
 
-export class Home extends React.Component {
+class Banner extends React.Component {
 
 
     render() {
@@ -40,9 +37,6 @@ export class Home extends React.Component {
                 <div className="recent">
                 <Title>Recently Recommended</Title>
                 </div>
-
-               
-               <Movies />
             
             </div>
 
@@ -51,4 +45,4 @@ export class Home extends React.Component {
 
 }
 
-export default Home;
+export default Banner;

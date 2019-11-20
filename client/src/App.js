@@ -5,7 +5,7 @@ import {
 import "./App.css";
 import Nav from "./components/Nav";
 import { LoginTest, Register } from "./components/LoginTest";
-import { Home } from "./components/Home";
+import Home from "./components/Home";
 import LoginTestShow from "./components/LoginTestShow";
 import Secure from "./components/Secure";
 
