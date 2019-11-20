@@ -4,9 +4,8 @@
 
 import React from "react";
 import "./index.css";
-import Slider from "./slider";
+import Movies from "./slider";
 import Title from "../UsernameForm/Title";
-import { CarouselProvider } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "./slider.css"
 
@@ -43,7 +42,7 @@ export class Home extends React.Component {
                 </div>
 
                
-               <Slider />
+               <Movies />
             
             </div>
 

@@ -46,6 +46,7 @@ import "./slider.css"
                     {/* {console.log(this.state.movies)} */}
                     {this.state.movies.map(item => (
                         <div className="card text-white bg-dark mb-3 cardy">
+                            <div> {item.index}</div>
                             <div className="card-header">{item.name}</div>
                             <div className="card-body text-white">
                                 <img src={item.poster} alt={item.name} />

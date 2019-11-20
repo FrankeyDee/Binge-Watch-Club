@@ -1,9 +1,11 @@
 const fetch = require("node-fetch");
 const router = require("express").Router();
-// const showRoutes = require("./shows");
+const showRoutes = require("./shows");
 const authRoutes = require("./auth");
+const authController = require("../../controllers/authController");
 
 //Show Routes
+// router.use("/shows", showsRoutes);
 router.use("/auth", authRoutes);
 
 router.route('/show/search')
@@ -25,6 +27,6 @@ router.route('/show/search')
             .then(r => res.json(r))
             .catch(err => res.status(500).json({ error: err }))
     })
-// router.use("/shows", showRoutes);
+router.use("/shows", authController.isLoggedIn, showRoutes);
 
 module.exports = router;
