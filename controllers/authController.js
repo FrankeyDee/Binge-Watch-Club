@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt');
-const db = require('../models-test-auth/');
+const db = require('../models/');
 
 module.exports = {
     register: (req, res) => {
