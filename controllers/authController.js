@@ -31,5 +31,12 @@ module.exports = {
     logout: (req, res) => {
         req.logout();
         res.sendStatus(200);
+    },
+    isLoggedIn: (req, res, next) => {
+        if (req.user) {
+          next()
+        } else {
+          res.sendStatus(401);
+        }
     }
 };
