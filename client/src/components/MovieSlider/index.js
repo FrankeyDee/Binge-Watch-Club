@@ -6,7 +6,7 @@ import "./slider.css"
 const MovieSlider = (props) => {
     return (
         <CarouselProvider
-            naturalSlideHeight={200}
+            naturalSlideHeight={300}
             naturalSlideWidth={400}
             totalSlides={12}>
             <ButtonBack className="btn-outline-secondary">&lt;&lt;</ButtonBack>
