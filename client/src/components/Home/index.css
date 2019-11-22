@@ -66,3 +66,14 @@ img {
     margin-top: 20px;
     justify-content: center;
 }    
+
+.banner_container {
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.banner_flex {
+    flex-shrink: 7;
+}
