@@ -3,7 +3,6 @@ import React, {
     Component,
     Fragment
 } from "react";
-import cookie from 'react-cookies'
 import {
     Redirect
 } from 'react-router-dom';
@@ -12,7 +11,7 @@ import API from "../Login-Reg-Utils/API";
 import './secure.css'
 
 
-class Secure extends React.Component {
+class Secure extends Component {
 
     constructor(props) {
         super(props);

@@ -14,13 +14,13 @@ const MovieSlider = (props) => {
                 <div className="card-container">
                     {props.movies.map((item, index) => (
                         <Slide className="card text-white bg-dark mb-3 cardy" key={item.name} index={index}>
-                            <div> {item.index}</div>
+                            <div>{item.index}</div>
                             <div className="card-header">{item.name}</div>
                             <div className="card-body text-white">
                                 <img src={item.poster} alt={item.name} />
                                 <div id="overview" className="text-white">{item.overview}</div>
                             </div>
-                            { props.isSearch ? <button onClick={() => props.saveHandler(item)}>Save</button> : <button onClick={() => props.deleteHandler(item.id)}>Delete</button> }
+                            { props.isSearch ? <button onClick={() => props.saveHandler(item)}>Save</button> : <button onClick={() => props.deleteHandler(item._id)}>Delete</button> }
                         </Slide>
                     ))}
                 </div>

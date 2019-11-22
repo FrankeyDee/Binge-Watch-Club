@@ -19,7 +19,7 @@ class SavedShow extends Component {
   }
 
   getSavedShows = () => {
-    API.getSavedShows()
+    API.getSavedShows("/api/shows")
       .then(res =>
         this.setState({
           shows: res.data
@@ -49,7 +49,7 @@ class SavedShow extends Component {
           <Col size="md-12">
             <Card title="Saved Shows" icon="download">
               {this.state.shows.length ? (
-                <MovieSlider movies={this.state.shows} />
+                <MovieSlider movies={this.state.shows} deleteHandler={this.handleShowDelete} />
               ) : (
                 <h2 className="text-center">No Saved Shows</h2>
               )}

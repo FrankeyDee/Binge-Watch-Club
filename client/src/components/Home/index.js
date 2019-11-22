@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-
+import API from "../ApiSaveShows/API";
 import Banner from "./banner";
 import MovieSlider from "../MovieSlider";
 import About from "./about";
@@ -11,6 +11,26 @@ class Home extends Component {
     componentDidMount() {
         this.loadMovies();
     }
+
+//------------------
+
+getSavedShows = () => {
+    API.getSavedShows("/api/shows")
+      .then(res =>
+        this.setState({
+          shows: res.data
+        })
+      )
+      .catch(err => console.log(err));
+};
+
+//   handleShowSave = id => {
+//     API.saveShow(id).then(res => this.getSavedShows());
+//   };
+
+//------------------
+
+
 
     loadMovies = () => {
         fetch('/api/show/search', {
@@ -31,11 +51,15 @@ class Home extends Component {
             .catch(err => console.error(err))
     }
 
+    handleShowSave = show => {
+        API.saveShow(show).then(res => console.info('show saved'));
+    };
+
     render() {
         return (
             <Fragment>
                 <Banner />
-                <MovieSlider movies={this.state.movies} saveHandler={(movie) => console.log('Should save at some point: ' + JSON.stringify(movie))} isSearch />
+                <MovieSlider movies={this.state.movies} saveHandler={this.handleShowSave} isSearch />
                 <About />
             </Fragment>
         );
