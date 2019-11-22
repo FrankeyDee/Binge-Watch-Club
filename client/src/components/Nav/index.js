@@ -1,5 +1,7 @@
 import React from "react";
 import "./index.css";
+// import Home from "../Home/index.js"
+import loadMovies from "../Home/index.js";
 // import { LoginTest, Register } from "./components/LoginTest";
 // // import Home from "./components/Home";
 // import LoginTestShow from "./components/LoginTestShow";
@@ -31,12 +33,12 @@ function Nav() {
     </form> */}
 
     {/* <div className="search"> */}
-      <select className="form-control mr-sm-2 dropdown" placeholder="Search" id="exampleSelect1">
-        <option>Action</option>
-        <option>Animated</option>
-        <option>Comedy</option>
-        <option>Romance</option>
-        <option>Sci Fi</option>
+      <select onChange={loadMovies.loadMovies} className="form-control mr-sm-2 dropdown"  placeholder="Search" id="exampleSelect1">
+        <option value="28">Action</option>
+        <option value="16">Animated</option>
+        <option value="35">Comedy</option>
+        <option value="10749">Romance</option>
+        <option value="878">Sci Fi</option>
       </select>
     </div>
     <div>

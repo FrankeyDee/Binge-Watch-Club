@@ -8,8 +8,8 @@ const authController = require("../../controllers/authController");
 // router.use("/shows", showsRoutes);
 router.use("/auth", authRoutes);
 
-router.route('/show/search')
-    .post((req, res) => {
+router.route('/show/search/:id')
+    .get((req, res) => {
         // fetch(`http://www.omdbapi.com/?apikey=${process.env.OMDB_API_KEY}&s=${req.body.query}&type=series&plot=short`)
         //     .then(r => r.json())
         //     .then(r => res.json(r))
@@ -21,7 +21,7 @@ router.route('/show/search')
         //         "x-rapidapi-key": process.env.RAPID_API_IMDB_API_KEY
         //     }
         // })
-        fetch(`https://api.themoviedb.org/3/discover/tv?api_key=${process.env.TMDB_API_KEY}&language=en-US&with_genres=${req.body.query}`)
+        fetch(`https://api.themoviedb.org/3/discover/tv?api_key=${process.env.TMDB_API_KEY}&language=en-US&with_genres=${req.params.id}`)
 
             .then(r => r.json())
             .then(r => res.json(r))

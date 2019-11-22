@@ -32,14 +32,9 @@ getSavedShows = () => {
 
 
 
-    loadMovies = () => {
-        fetch('/api/show/search', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ query: '35' })
-        })
+    loadMovies = (e = { target: { value: 28 } }) => {
+        const id = e.target.value;
+        fetch(`/api/show/search/${id}`)
             .then(res => res.json())
             .then(res => res.results)
             .then(res => res.reduce((movieObj, show) => {
@@ -58,7 +53,7 @@ getSavedShows = () => {
     render() {
         return (
             <Fragment>
-                <Banner />
+                <Banner loadMovies={this.loadMovies} />
                 <MovieSlider movies={this.state.movies} saveHandler={this.handleShowSave} isSearch />
                 <About />
             </Fragment>
