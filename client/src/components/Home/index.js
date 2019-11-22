@@ -32,17 +32,9 @@ getSavedShows = () => {
 
 
 
-    loadMovies = (e = { target: { value: 35 } }) => {
+    loadMovies = (e = { target: { value: 28 } }) => {
         const id = e.target.value;
-        console.info(e.target.value);
-        console.log("works");
-        fetch(`/api/show/search/${id}`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ query: '35' })
-        })
+        fetch(`/api/show/search/${id}`)
             .then(res => res.json())
             .then(res => res.results)
             .then(res => res.reduce((movieObj, show) => {
