@@ -1,5 +1,5 @@
 import React from "react";
-// import "./Form.css";
+
 
 const Form = ({ inputHandler, submitHandler }) => (
   <div className="form-wrap">
@@ -10,8 +10,7 @@ const Form = ({ inputHandler, submitHandler }) => (
       <label htmlFor="username" className="text-primary">Username</label>
  
       <br/>
-      <input id="in
-      putDefault" type="password" name="password" className="form-control btn-outline-secondary" onChange={inputHandler} required />
+      <input id="inputDefault" type="password" name="password" className="form-control btn-outline-secondary" onChange={inputHandler} required />
       <span className="input-underline"></span>
       <label htmlFor="password" className="text-primary">Password</label>
 

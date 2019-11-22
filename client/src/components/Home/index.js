@@ -4,6 +4,7 @@ import Banner from "./banner";
 import MovieSlider from "../MovieSlider";
 import About from "./about";
 
+
 class Home extends Component {
     state = {
         movies: []
@@ -12,8 +13,6 @@ class Home extends Component {
         this.loadMovies();
     }
 
-//------------------
-
 getSavedShows = () => {
     API.getSavedShows("/api/shows")
       .then(res =>
@@ -21,16 +20,9 @@ getSavedShows = () => {
           shows: res.data
         })
       )
+
       .catch(err => console.log(err));
 };
-
-//   handleShowSave = id => {
-//     API.saveShow(id).then(res => this.getSavedShows());
-//   };
-
-//------------------
-
-
 
     loadMovies = (e = { target: { value: 28 } }) => {
         const id = e.target.value;
@@ -47,10 +39,15 @@ getSavedShows = () => {
     }
 
     handleShowSave = show => {
-        API.saveShow(show).then(res => console.info('show saved'));
+        API.saveShow(show)
+        .then(res => {
+           
+                alert('show saved')
+            
+        });
     };
 
-    render() {
+    render() { 
         return (
             <Fragment>
                 <Banner loadMovies={this.loadMovies} />

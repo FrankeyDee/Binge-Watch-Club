@@ -21,12 +21,7 @@ module.exports = {
       });
     }).catch(err => res.status(500).json(err));
   },
-  // update: function(req, res) {
-  //   db.Show
-  //     .findOneAndUpdate({ _id: req.params.id }, req.body)
-  //     .then(dbShow => res.json(dbShow))
-  //     .catch(err => res.status(422).json(err));
-  // }
+
   remove: function(req, res) {
     db.User.findById(req.user._id).then(user => {
       user.shows.pull(req.params.id);

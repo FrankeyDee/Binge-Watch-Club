@@ -1,7 +1,6 @@
 // import React from "react";
 import React, {
-    Component,
-    Fragment
+       Fragment
 } from "react";
 import {
     Link

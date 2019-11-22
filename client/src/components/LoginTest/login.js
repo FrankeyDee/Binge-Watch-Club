@@ -1,6 +1,6 @@
 // import React from "react";
 // import './login.css'
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import API from "../Login-Reg-Utils/API";
 import Title from "../UsernameForm/Title";

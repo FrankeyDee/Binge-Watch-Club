@@ -53,17 +53,6 @@ class Secure extends Component {
             .catch(err => console.error(err));
     }
 
-
-
-
-    // handleSubmit = () => {
-    //     this.props.history.push("/loginshow");
-    //     // console.log(this.props)
-    // }
-
-
-
-
     render() {
 
         if (this.state.loading) {

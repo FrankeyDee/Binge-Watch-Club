@@ -40,7 +40,7 @@ const sessConfig = {
 	cookie: {
 		path: '/',
 		httpOnly: false,
-		maxAge: 5 * 60 * 1000
+		maxAge: 10 * 60 * 1000
 	}
 }
 
@@ -54,8 +54,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 // Add routes, both API and view
 app.use(routes);
-
-
 
 // Start the API server
 app.listen(PORT, function () {
