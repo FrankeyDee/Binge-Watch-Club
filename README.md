@@ -1,3 +1,7 @@
+## BINGE WATCH CLUB
+
+With this app, you search for TV shows you want to watch, and when you register and login, you have the ability to save shows you want to watch in the future!  The app saves database info in MongoDB and uses Mongoose.  It also uses "pure react carousel" to display shows, and pulls show information from The Movie Database (TMDb). 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
