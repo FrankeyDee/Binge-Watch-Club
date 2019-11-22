@@ -1,7 +1,3 @@
-// export { Login } from "./login";
-// export { Register } from "./register";
-
-
 import React from "react";
 import Title from "../UsernameForm/Title";
 import "./index.css";
@@ -16,9 +12,10 @@ import "./index.css";
 
 const Banner = (props) => {
     return (
-        <div className="contain">
-            <div className="intro">
-                <div className="wordart">
+        <div className="banner_container">
+            <div className="banner_flex">
+            {/* <div className="intro">
+                <div className="wordart"> */}
                     <img id="wordart" src="tv_word_art.jpg" alt="A TV" />
                     <div className="banner">
                         <h1>Welcome to The Binge Watch Club!</h1>
@@ -33,15 +30,16 @@ const Banner = (props) => {
                             <option value="878">Sci Fi</option>
                         </select>
                     </div>
-                </div>
-            </div>
+                </div> 
+                {/*</div> */}
+            {/* </div>
             
 
 
             <div className="recent">
             <Title>Recently Recommended</Title>
             </div>
-        
+         */}
         </div>
 
     );
