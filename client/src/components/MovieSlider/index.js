@@ -10,7 +10,7 @@ const MovieSlider = (props) => {
             naturalSlideWidth={400}
             totalSlides={12}>
             <ButtonBack className="btn-outline-secondary">&lt;&lt;</ButtonBack>
-            <Slider>
+            <Slider infinite="false">
                 <div className="card-container">
                     {props.movies.map((item, index) => (
                         <Slide className="card text-white bg-dark mb-3 cardy" key={item.name} index={index}>
