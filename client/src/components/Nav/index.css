@@ -8,3 +8,7 @@
     border-radius: 15px;
     border: 2px solid;
 }
+.navbar-brand {
+    margin-right: 1rem;
+    font-size: xx-large;
+}

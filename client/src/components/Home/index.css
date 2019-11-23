@@ -65,4 +65,38 @@ img {
 .banner {
     margin-top: 20px;
     justify-content: center;
-}    
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1.5rem + 0px);
+    padding: 0.75rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 18;
+    color: black;
+    background-color: #f7f7f9;
+    background-clip: padding-box;
+    border: 2px solid black;
+    border-radius: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.dropdown {
+    width: -webkit-fill-available;
+    padding-bottom: 5px;
+}
+
+.navbar {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
