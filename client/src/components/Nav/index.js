@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 // import Home from "../Home/index.js"
-// import loadMovies from "../Home/index.js";
+
 // import { LoginTest, Register } from "./components/LoginTest";
 // // import Home from "./components/Home";
 // import LoginTestShow from "./components/LoginTestShow";
@@ -24,6 +24,12 @@ function Nav() {
       </li>
       <li className="nav-item">
         <a className="nav-link" href="/register">Register</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="/saved">My Shows</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="/">Log Out</a>
       </li>
     </ul>
   </div>
