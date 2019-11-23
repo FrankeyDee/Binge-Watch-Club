@@ -57,7 +57,7 @@ export class LoginTest extends React.Component {
             </div> }
           <Form inputHandler={this.handleInputChange} submitHandler={this.handleSubmit} />
           <div className="form-wrap">
-            <Link to="/register" className="btn btn-info center-btn">First time? Register here</Link>
+          <Link to="/register" className="btn btn-info center-btn">First time? Register here</Link>
           </div>
         </Fragment>
       );

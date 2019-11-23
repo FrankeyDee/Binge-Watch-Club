@@ -25,12 +25,6 @@ function Nav() {
       <li className="nav-item">
         <a className="nav-link" href="/register">Register</a>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/saved">My Shows</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/">Log Out</a>
-      </li>
     </ul>
   </div>
 </nav>
