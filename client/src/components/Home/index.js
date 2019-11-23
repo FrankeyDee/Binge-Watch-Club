@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import API from "../ApiSaveShows/API";
 import Banner from "./banner";
 import MovieSlider from "../MovieSlider";
-import About from "./about";
+// import About from "./about";
 
 class Home extends Component {
     state = {
