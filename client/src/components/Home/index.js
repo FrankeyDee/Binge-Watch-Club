@@ -55,7 +55,7 @@ getSavedShows = () => {
             <Fragment>
                 <Banner loadMovies={this.loadMovies} />
                 <MovieSlider movies={this.state.movies} saveHandler={this.handleShowSave} isSearch />
-                <About />
+                {/* <About /> */}
             </Fragment>
         );
     }

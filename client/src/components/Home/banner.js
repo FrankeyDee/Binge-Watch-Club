@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../UsernameForm/Title";
 import "./index.css";
-import { Link } from "react-router-dom";
+
 
 const Banner = (props) => {
     return (
@@ -24,9 +24,6 @@ const Banner = (props) => {
                     </div>
                 </div>
             </div>
-                        <Link to="/saved" className="btn btn-info">See your saved movies!</Link>
-            
-
 
             <div className="recent">
             <Title>Recently Recommended</Title>
