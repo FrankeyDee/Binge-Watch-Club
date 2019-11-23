@@ -21,7 +21,7 @@ const MovieSlider = (props) => {
                             <img src={item.poster} alt={item.name} />
                             <div id="overview" className="text-white">{item.overview}</div>
                         </div>
-                    <ButtonBack className="backBtn btn-outline-secondary">&lt;&lt;</ButtonBack>
+                        <ButtonBack className="backBtn btn-outline-secondary">&lt;&lt;</ButtonBack>
                         { props.isSearch ? <button onClick={() => props.saveHandler(item)}>Save</button> : <button onClick={() => props.deleteHandler(item._id)}>Delete</button> }
                         <ButtonNext className="btn-outline-secondary">&gt;&gt;</ButtonNext>
                     </Slide>

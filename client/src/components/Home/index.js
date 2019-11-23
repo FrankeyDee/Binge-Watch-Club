@@ -24,11 +24,6 @@ getSavedShows = () => {
       .catch(err => console.log(err));
 };
 
-//   handleShowSave = id => {
-//     API.saveShow(id).then(res => this.getSavedShows());
-//   };
-
-//------------------
 
 
 
@@ -45,10 +40,15 @@ getSavedShows = () => {
             .then(show => this.setState({ movies: show }))
             .catch(err => console.error(err))
     }
-
-    handleShowSave = show => {
-        API.saveShow(show).then(res => console.info('show saved'));
+ handleShowSave = show => {
+        API.saveShow(show)
+        .then(res => {
+           
+                alert('show saved')
+            
+        });
     };
+   
 
     render() {
         return (

@@ -1,18 +1,7 @@
-// export { Login } from "./login";
-// export { Register } from "./register";
-
-
 import React from "react";
 import Title from "../UsernameForm/Title";
 import "./index.css";
-
-
-// import React, { useState } from 'react';
-// import ItemsCarousel from 'react-items-carousel';
-
-// export default () => {
-//   const [activeItemIndex, setActiveItemIndex] = useState(0);
-//   const chevronWidth = 40;
+import { Link } from "react-router-dom";
 
 const Banner = (props) => {
     return (
@@ -35,6 +24,7 @@ const Banner = (props) => {
                     </div>
                 </div>
             </div>
+                        <Link to="/saved" className="btn btn-info">See your saved movies!</Link>
             
 
 

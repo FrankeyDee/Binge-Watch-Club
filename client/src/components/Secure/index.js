@@ -9,6 +9,7 @@ import {
 import Title from "../UsernameForm/Title";
 import API from "../Login-Reg-Utils/API";
 import './secure.css'
+import { Link } from "react-router-dom";
 
 
 class Secure extends Component {
@@ -73,7 +74,7 @@ class Secure extends Component {
             return <Redirect to = '/login' />
         }
         return ( <Fragment>
-            <Title> My Shows To Binge </Title> 
+            <Link to="/" className="btn btn-info">Let's Get Started!</Link> 
             <div className="logout-button">
             <button id = "logout" onClick = {this.handleLogout} className = "btn btn-outline-danger">LOG OUT</button>
             </div>
