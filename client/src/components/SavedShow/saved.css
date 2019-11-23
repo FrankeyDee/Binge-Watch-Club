@@ -1,0 +1,32 @@
+#overview {
+    font-size: 15px;
+}
+.card-header {
+    font-size: 22px;
+}
+img {
+    width: 33%;
+    height: 50%;
+}
+.carousel1 {
+    flex: 0 0 auto;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.backBtn {
+    flex: 0 0 auto;
+    align-self: flex-start;
+}
+.slider1 {
+    flex: 0 0 auto;
+    align-content: center;
+}
+
+.slide1 {
+    flex: 1 0 auto;
+}
+
+.carouselrow {
+    flex: 0 0 auto;
+}
