@@ -1,0 +1,22 @@
+.contain {
+    display: flex;
+    background-color: brown;
+    flex-direction: column;
+    flex-grow: inherit;
+}
+
+.intro {
+    margin: 10px;
+    padding: 10px;
+    align-self: center;
+}
+.search {
+
+}
+.recent {
+
+}
+
+.intro-text {
+    
+}
