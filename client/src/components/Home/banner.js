@@ -7,6 +7,7 @@ const Banner = (props) => {
     return (
         <div className="contain">
             <div className="intro">
+              
                 <div className="wordart">
                     <img id="wordart" src="tv_word_art.jpg" alt="A TV" />
                     <div className="banner">
@@ -24,11 +25,11 @@ const Banner = (props) => {
                     </div>
                 </div>
             </div>
-                        <Link to="/saved" className="btn btn-info">See your saved movies!</Link>
             
 
 
             <div className="recent">
+            <Link to="/saved" className="btn btn-outline">See your saved movies!</Link>
             <Title>Recently Recommended</Title>
             </div>
         

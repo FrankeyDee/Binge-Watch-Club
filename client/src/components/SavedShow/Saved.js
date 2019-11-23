@@ -41,7 +41,7 @@ class SavedShow extends Component {
               <h1 className="text-center">
                 <strong>Binge Club Search</strong>
               </h1>
-              <h2 className="text-center">Saved Shows of Interest.</h2>
+              <h2 className="text-center">My Saved Shows!</h2>
             </Jumbotron>
           </Col>
         </Row>
