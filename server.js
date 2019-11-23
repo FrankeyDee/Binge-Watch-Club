@@ -56,17 +56,7 @@ app.use(passport.session());
 // Add routes, both API and view
 app.use('/',routes);
 
-
-
 // Start the API server
-
-if (process.env.NODE_ENV === 'production') {
-	app.use(express.static( './client/build'));
-
-	app.get('*', () => () => {
-		res.sendFile(path.join(__dirname, 'client', 'build', 'index.html')); //relative path
-	});
-}
 
 app.listen(PORT, function () {
 	console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
