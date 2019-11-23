@@ -1,5 +1,10 @@
 import React from "react";
 import "./index.css";
+// import Home from "../Home/index.js"
+import loadMovies from "../Home/index.js";
+// import { LoginTest, Register } from "./components/LoginTest";
+// // import Home from "./components/Home";
+// import LoginTestShow from "./components/LoginTestShow";
 
 function Nav() {
   return (
@@ -21,7 +26,27 @@ function Nav() {
         <a className="nav-link" href="/register">Register</a>
       </li>
     </ul>
-  </div>
+{/* 
+    <form className="form-inline my-2 my-lg-0">
+      <input className="form-control mr-sm-2" type="text" placeholder="Search" />
+      <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form> */}
+
+    {/* <div className="search"> */}
+      <select onChange={loadMovies.loadMovies} className="form-control mr-sm-2 dropdown"  placeholder="Search" id="exampleSelect1">
+        <option value="28">Action</option>
+        <option value="16">Animated</option>
+        <option value="35">Comedy</option>
+        <option value="10749">Romance</option>
+        <option value="878">Sci Fi</option>
+      </select>
+    </div>
+    <div>
+      <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </div>
+
+
+
 </nav>
   );
 }
