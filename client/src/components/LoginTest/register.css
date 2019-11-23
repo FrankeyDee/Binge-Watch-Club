@@ -118,3 +118,8 @@
     width: 400px;
     margin: auto;
 }
+.form-wrap {
+    display: block;
+    text-align: center;
+    align-content: unset;
+}

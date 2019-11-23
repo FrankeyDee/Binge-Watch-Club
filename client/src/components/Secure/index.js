@@ -6,6 +6,7 @@ import React, {
 import {
     Redirect
 } from 'react-router-dom';
+// eslint-disable-next-line
 import Title from "../UsernameForm/Title";
 import API from "../Login-Reg-Utils/API";
 import './secure.css'
@@ -73,12 +74,18 @@ class Secure extends Component {
         if (!this.state.user) {
             return <Redirect to = '/login' />
         }
-        return ( <Fragment>
-            <Link to="/" className="btn btn-info">Let's Get Started!</Link> 
-            <div className="logout-button">
-            <button id = "logout" onClick = {this.handleLogout} className = "btn btn-outline-danger">LOG OUT</button>
+        return ( 
+            <div className="container">
+                <Fragment>
+                <Title>What to Watch?</Title>
+                <ul className="options">
+                
+                    <li><Link to="/" className="btn btn-outline-success" a href="/">Search</Link></li>
+                    <li><Link to="/saved" className="btn btn-outline-info">Saved Shows</Link></li>
+                    <li><Link to="/" className="btn btn-outline-warning">Log Out</Link></li>
+                </ul>
+                </Fragment>
             </div>
-            </Fragment>
         );
 
     }
