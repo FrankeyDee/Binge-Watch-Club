@@ -1,8 +1,29 @@
-.imgStyle {
-    width: 400px; 
-    display: block; 
+#overview {
+    font-size: 15px;
+}
+
+img {
+    width: 30%;
+    height: 40%;
+}
+
+.card-header {
+    font-size: 30px;
 }
 
 #overview {
-    font-size: 15px;
+    font-size: 20px;
+}
+
+.carousel1 {
+    flex-wrap: nowrap;
+    flex: 0 0 auto;
+  }
+
+.slider1 {
+    flex: 0 0 auto;
+}
+
+.card {
+    flex: 0 1 auto;
 }

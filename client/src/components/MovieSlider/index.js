@@ -34,3 +34,5 @@ const MovieSlider = (props) => {
 
 export default MovieSlider;
 
+
+
