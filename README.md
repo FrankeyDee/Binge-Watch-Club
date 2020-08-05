@@ -6,7 +6,7 @@ With this app, you search for TV shows you want to watch, and when you register 
 
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 * [Node.JS](https://nodejs.org/) - JavaScript runtime
-* [monggoDB](https://www.mongodb.com/) - Database
+* [MongoDB](https://www.mongodb.com/) - Database
 * [Express] (https://expressjs.com/) - Web framework
 
 ## Authors
