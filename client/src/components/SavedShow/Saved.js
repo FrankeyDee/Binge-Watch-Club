@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Jumbotron from "../ShowSavedPages/Jumbotron";
 import Card from "../ShowSavedPages/Card";
 import MovieSlider from "../MovieSlider";
 // import SavedShow from "../components/SavedShow";
@@ -37,13 +36,9 @@ class SavedShow extends Component {
       <Container>
         <div className="car">
         <h1>Your Saved Shows</h1>
-          {/* <div className="card-body"> */}
           </div>
-          <img style={{height: '100%',width: '50%', display: 'block', alignSelf: 'center'}} src="https://images.unsplash.com/photo-1481137344492-d5a150a97f8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" />
-          {/* <div className="card-body"> */}
-          {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
-          {/* </div> */}
-        {/* </div> */}
+          {/* // eslint-disable-next-line} */}
+          <img style={{height: '100%',width: '50%', display: 'block', alignSelf: 'center'}} alt="Saved" src="https://images.unsplash.com/photo-1481137344492-d5a150a97f8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" />
         <Row>
           <Col size="md-12">
             <Card title="Saved Shows" icon="download">

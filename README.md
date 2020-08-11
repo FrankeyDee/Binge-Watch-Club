@@ -1,21 +1,31 @@
 # BINGE WATCH CLUB
 
-With this app, you search for TV shows you want to watch, and when you register and login, you have the ability to save shows you want to watch in the future!  The app saves database info in MongoDB and uses Mongoose.  It also uses "pure react carousel" to display shows, and pulls show information from The Movie Database (TMDb). 
+An app to help users search for the most recommended TV shows based on genre. Additional features include the ability to save TV show titles after registering and logging in. 
+
+TV show details pull from The Movie Database (TMDb), while 'saved' shows are managed with MongoDB and the use of Mongoose. All neatly bundled up using React, Node.js and Express. 
 
 ## Built With
 
-* [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+* [React](https://reactjs.org/) - A JavaScript library for   building user interfaces
 * [Node.JS](https://nodejs.org/) - JavaScript runtime
 * [MongoDB](https://www.mongodb.com/) - Database
-* [Express] (https://expressjs.com/) - Web framework
+* [Express](https://expressjs.com/) - Web framework
+
+
+<!-- Start-to-finish instructions on how to run the app + include screenshots -->
+**Search for recommended TV shows by selecting a genre**
+<img src="client/src/Images/searchGIF.gif" />
+**Registered users can 'Save' TV Show titles to a personal library. User can also delete from saved when finished watching**
+<img src="client/src/Images/savedGIF.gif" />
+
 
 ## Authors
 
-* **Frankey Darban** @FrankeyDee
-* **Val Sakamura** @water96763
-* **Willy Louis-Charles** @Spacejnk
-* **Zachary Jordan** @czjordan323
+* **Frankey Darban** [@FrankeyDee](https://github.com/FrankeyDee)
+* **Val Sakamura** [@water96763](https://github.com/water96763)
+* **Willy Louis-Charles** [@Spacejnk](https://github.com/Spacejnk)
+* **Zachary Jordan** [@czjordan323](https://github.com/czjordan323)
 
-## Link to Deployed App
+## Deployed on Heroku
 
 https://warm-gorge-90894.herokuapp.com/
