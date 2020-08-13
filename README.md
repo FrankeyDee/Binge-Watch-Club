@@ -12,7 +12,7 @@ TV show details pull from The Movie Database (TMDb), while 'saved' shows are man
 * [Express](https://expressjs.com/) - Web framework
 
 
-<!-- Start-to-finish instructions on how to run the app + include screenshots -->
+
 **Search for recommended TV shows by selecting a genre**
 <img src="client/src/Images/searchGIF.gif" />
 **Registered users can 'Save' TV Show titles to a personal library. User can also delete from saved when finished watching**
